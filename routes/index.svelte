@@ -1,10 +1,16 @@
+<script lang="ts">
+	import ORIGIN from '../lib/origin'
+</script>
+
 <svelte:head>
 	<title>App Zone</title>
 </svelte:head>
 
 <main>
 	<h1>App Zone</h1>
-	<a href="itms-services://?action=download-manifest&url=/manifest.plist">
+	<a
+		href="itms-services://?action=download-manifest&url={ORIGIN}/manifest.plist"
+	>
 		Download
 	</a>
 </main>
